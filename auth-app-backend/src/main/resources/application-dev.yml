@@ -1,1 +1,20 @@
-
+# dev version of configuration
+server:
+  port: 8083
+  
+# database connection
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-auth-app-db
+    username: root
+    password: password
+    
+  #jpa and hybernate configurations
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        formal_sql: true
+    show-sql: true

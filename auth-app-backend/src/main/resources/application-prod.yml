@@ -1,1 +1,3 @@
-
+# prod version of configuration
+server:
+  port: 8080
